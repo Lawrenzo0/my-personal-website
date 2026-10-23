@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    color: #171717;
+    font-family: "Segoe UI", sans-serif;
+    line-height: 1.7;
+}
+
+header {
+    padding: clamp(4rem, 12vw, 9rem) max(6%, calc((100% - 1080px) / 2));
+    background: #111;
+    color: #fff;
+}
+
+header h1 {
+    max-width: 850px;
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+header p {
+    margin: 1.5rem 0 0;
+    color: #c9c9c9;
+    font-size: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: clamp(1.25rem, 4vw, 3rem);
+    flex-wrap: wrap;
+    padding: 1rem max(6%, calc((100% - 1080px) / 2));
+    border-bottom: 1px solid #dedede;
+    background: #fff;
+}
+
+nav a {
+    color: #222;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    color: #777;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+main {
+    width: min(900px, 88%);
+    margin: 3rem auto 5rem;
+}
+
+section {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #dedede;
+    scroll-margin-top: 1rem;
+}
+
+section h2 {
+    margin: 0 0 1rem;
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+section p {
+    max-width: 680px;
+    color: #555;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    margin: 1.25rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid #aaa;
+}
+
+article {
+    margin-top: 1.5rem;
+    padding-left: 1.25rem;
+    border-left: 2px solid #171717;
+}
+
+article h3 {
+    margin: 0;
+    font-size: 1.15rem;
+}
+
+article p {
+    margin-bottom: 0;
+}
+
+form {
+    display: grid;
+    gap: 0.65rem;
+    max-width: 620px;
+    margin-top: 1.5rem;
+}
+
+input,
+textarea,
+button {
+    font: inherit;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem 0;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+    border-radius: 0;
+    background: transparent;
+    color: #171717;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom-color: #111;
+    outline: 2px solid transparent;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    justify-self: start;
+    margin-top: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid #111;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+    background: #fff;
+    color: #111;
+}
+
+footer {
+    padding: 1.5rem 6%;
+    background: #111;
+    color: #ddd;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    nav {
+        gap: 0.85rem 1.25rem;
+    }
+
+    main {
+        margin-top: 1.5rem;
+    }
+
+    section {
+        padding: 2rem 0;
+    }
+}
